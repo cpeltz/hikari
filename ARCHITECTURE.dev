@@ -1,0 +1,27 @@
+Note: This information is mostly outdated and not yet translated (obviously ^^).
+
+Module:
+- System
+- TagDB
+- UI
+- Config
+- Util
+
+Ziele:
+- Taggen von Dateien möglich (vornehmlich Bilder)
+- Suchen und sortieren nach Tags
+- schnell mit vielen Daten umgehen können
+- Multicore-Technik benutzen (Threads etc)
+- Tags frei wählbar
+
+Meilensteine:
+- Version 1
+- - TagDB funktioniert (Simple Implementation)
+- - Config funktioniert (Simple Implementation)
+- - Util funktioniert (SHA-Hashs)
+- - CLI funktioniert (Suchen, Adden, Löschen, Taggen)
+- Version 2
+- - sqlite3 Implementation von TagDB
+- - gconf Implementation von Config
+- Version 3
+- - GTK-GUI funktioniert

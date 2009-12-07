@@ -1,0 +1,38 @@
+Hikari means light (e.g. from the sun, not the opposite of heavy) and is a image
+tagging and viewing program. What does this mean? First, you can browse your
+images with this application, Second, you can assign informativ tags to the
+images, like nature or home. If you look for a specific bunch of images you can
+search for these tags and will auomatically get all images on your disc that
+contain such a tag.
+
+Design-thoughts:
+The tags won't be saved inside the images rather than externally in a global
+file, this file contains for each image tagged a line consisting of (path to
+file, SHA-256 or SHA-512 hash sum, list of tags). If a file once tagged is moved
+to a other location and the user starts the program (alternativ when try to view
+the moved file) a notification will be displayed and the program may search (or
+the user specifies a folder or the user does not want it or the image was
+removed) for the missing file using the hash sum (maybe a hint of the user would
+be nice, where the file may be located).
+As this program may be used to just view and browse images it should be fast to
+start and appear (extra Threads for reading tag-file etc). The interface should
+be clean and simple at first, only if the user wants to use the advanced
+features (user-configuration) the interface will be expanded (maybe fast toggle
+button).
+Middle-Mouse Button action configurable (scroll or zoom or go to next/prev).
+
+Used tools:
+cmake
+git
+g++
+
+Used Librarys:
+boost
+ossp-uuid
+crypt++
+
+Librarys maybe used in the future:
+gtkmm
+glademm
+(what about image handling? magick++?)
+sqlite3
